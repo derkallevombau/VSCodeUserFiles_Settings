@@ -1,0 +1,767 @@
+{
+	"workbench.enableExperiments": false,
+	"workbench.settings.enableNaturalLanguageSearch": false,
+	"workbench.colorTheme": "Abyss",
+	"workbench.sideBar.location": "right",
+	"editor.minimap.enabled": false,
+	"editor.formatOnType": true,
+	"editor.fontSize": 12,
+	"editor.fontFamily": "'monospace', 'Droid Sans Mono', monospace, 'Droid Sans Fallback'",
+	"window.menuBarVisibility": "toggle",
+	"window.restoreFullscreen": true,
+	"window.restoreWindows": "all",
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 20000,
+	"files.enableTrash": false,
+	"workbench.editor.highlightModifiedTabs": true,
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"templateGenerator.fields.author": "derkallevombau",
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+	"javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+	"typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+	"typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+	"debug.inlineValues": true,
+	"debug.console.fontSize": 12,
+	"debug.showSubSessionsInToolBar": true,
+	"debug.toolBarLocation": "docked",
+	"javascript.suggest.completeFunctionCalls": true,
+	"workbench.colorCustomizations": {
+		"[Abyss]": {
+			"editor.foreground": "#c0c0c0", // Changed to 6688cc after update, set back to white.
+			//// Selection
+			// Selected text
+			"editor.selectionBackground": "#770811",
+			// Regions with same content as selection
+			"editor.selectionHighlightBackground": "#eeeeee00", // "#eeeeee44" // For Perl Editor
+			"editor.selectionHighlightBorder": "#770811",
+
+			//// Search
+			// Current search match
+			"editor.findMatchBackground": "#eeeeee00",
+			"editor.findMatchBorder": "#ff0000",
+			// Other search matches
+			"editor.findMatchHighlightBackground": "#00254b00",
+			"editor.findMatchHighlightBorder": "#ddbb88",
+
+			//// ???
+			"editor.wordHighlightBackground": "#00000000",
+			// "editor.wordHighlightBorder": "#00000000",
+			"editor.wordHighlightStrongBackground": "#00000000",
+			// "editor.wordHighlightStrongBorder": "#00000000",
+
+			//// Status Bar
+			"statusBar.background": "#70007f", // "#10192c"
+			"statusBar.noFolderBackground": "#10192c",
+			"statusBar.debuggingBackground": "#dd6509",
+
+			//// Editor Tabs
+			"tab.activeBackground":"#70007f7a",
+			//"tab.activeBorder":"#70007f",
+			//"tab.activeBorderTop":"#70007f"
+			}
+	},
+	"editor.tokenColorCustomizations": {
+		"[Abyss]": {
+			"textMateRules": [
+				{
+					// See 'editor.foreground'
+					"name": "Embedded",
+					"scope": "meta.embedded",
+					"settings": {
+						"fontStyle": "",
+						"foreground": "#c0c0c0"
+					}
+				},
+				{
+					"name": "String",
+					"scope": "string.quoted",
+					"settings": {
+						"foreground": "#25b94a"
+						// "foreground": "#22aa44"
+					}
+				},
+				{
+					"name": "Comment",
+					"scope": "comment",
+					"settings": {
+						"foreground": "#24a37f"
+					}
+				},
+				{
+					"name": "Control",
+					"scope": "keyword.control",
+					"settings": {
+						"fontStyle": "bold",
+						"foreground": "#3384d6"
+						// "foreground": "#ce822a"
+					}
+				},
+				{
+					"name": "Operator",
+					"scope": [
+						"keyword.operator",
+						// No effect on most regexps (except for e. g. 'split(/,/, @a)'), but on defined-or (//).
+						"punctuation.section.regexp.perl"
+					],
+					"settings": {
+						"fontStyle": "",
+						"foreground": "#27b4c7"
+					}
+				},
+				// {
+				// 	"name": "Variable",
+				// 	"scope": "variable",
+				// 	"settings": {
+				// 		"foreground": "#c0c0c0"
+				// 	}
+				// },
+				{
+					"name": "Storage",
+					"scope": "storage",
+					"settings": {
+						"fontStyle": "",
+						"foreground": "#25609b"
+					}
+				},
+				{
+					"name": "Storage type",
+					"scope": "storage.type",
+					"settings": {
+						"fontStyle": "italic",
+						"foreground": "#9966b8"
+					}
+				},
+				{
+					"name": "Class name",
+					"scope": [
+						"entity.name.class",
+						"entity.name.type",
+						"entity.name.namespace",
+						"entity.name.scope-resolution"
+					],
+					"settings": {
+						"fontStyle": "bold",
+						"foreground": "#ffeebb"
+					}
+				},
+				{
+					"name": "Inherited class",
+					"scope": "entity.other.inherited-class",
+					"settings": {
+						"fontStyle": "italic bold",
+						"foreground": "#ddbb88"
+					}
+				},
+				//
+				// Additional colors not defined in theme
+				//
+				{
+					"name": "Perl variable prefix ($, @, %)",
+					"scope": "punctuation.definition.variable.perl",
+					"settings": {
+						"fontStyle": "",
+						"foreground": "#f0d90e"
+					}
+				},
+				//
+				// Regexp colors (for all languages supporting regexps)
+				//
+				{
+					"name": "Regexp",
+					"scope": "string.regexp",
+					"settings": {
+						"fontStyle": "",
+						"foreground": "#ff9100"
+					}
+				},
+				{
+					"name": "Regexp anchor",
+					"scope": "keyword.control.anchor",
+					"settings": {
+						"fontStyle": "",
+						"foreground": "#ffffff"
+					}
+				},
+				{
+					"name": "Regexp or",
+					"scope": "keyword.operator.or.regexp",
+					"settings": {
+						"fontStyle": "",
+						"foreground": "#ffff00"
+					}
+				},
+				{
+					"name": "Regexp quantifier",
+					"scope": "keyword.operator.quantifier.regexp",
+					"settings": {
+						"fontStyle": "",
+						"foreground": "#84ff32"
+					}
+				},
+				{
+					"name": "Regexp group",
+					"scope": "punctuation.definition.group.regexp",
+					"settings": {
+						"fontStyle": "",
+						"foreground": "#00ffcd"
+					}
+				},
+				{
+					"name": "Regexp option",
+					"scope": "keyword.control.regexp-option",
+					"settings": {
+						"fontStyle": "bold",
+						"foreground": "#ff6600"
+					}
+				},
+				//
+				{
+					"name": "Escape",
+					"scope": "constant.character.escape",
+					"settings": {
+						"fontStyle": "",
+						"foreground": "#ff5050"
+					}
+				},
+				//
+				// Interpolated string colors for JS, TS, Perl and Shell (the latter require "Better Perl Syntax" and "Better Shell Syntax" for the scopes to be defined)
+				//
+				{
+					"name": "String interpolated (JS, TS, Perl and Shell)",
+					"scope": "string.template.js, string.template.ts, string.quoted.double.perl, string.quoted.double.shell",
+					"settings": {
+						"foreground": "#a1aa22"
+					}
+				},
+				//
+				// Vim default theme colors for shellscript editor (requires "Better Shell Syntax" for the scopes to be defined).
+				//
+				{
+					"name": "Shell shebang",
+					"scope": "comment.line.number-sign.shebang.shell",
+					"settings": {
+						"fontStyle": "bold",
+						"foreground": "#00ffff"
+					}
+				},
+				{
+					"name": "Shell comment",
+					"scope": "comment.line.number-sign.shell",
+					"settings": {
+						"foreground": "#00ffff"
+					}
+				},
+				{
+					"name": "Shell single quoted string",
+					"scope": "string.quoted.single.shell",
+					"settings": {
+						// "foreground": "#ff00ff" // Vim color,
+						"foreground": "#ff00ff"
+					}
+				},
+				{
+					"name": "Shell unquoted argument string",
+					"scope": "string.unquoted.argument.shell",
+					"settings": {
+						// "foreground": "#ffffff" // Vim color
+						"foreground": "#ce6cff"
+					}
+				},
+				{
+					"name": "Shell function, command group, normal variable assignment, loop variable)",
+					"scope": "storage.type.function.shell, punctuation.definition.group.shell, variable.other.assignment.normal.shell, variable.other.loop.shell",
+					"settings": {
+						"fontStyle": "bold",
+						"foreground": "#00ffff"
+					}
+				},
+				{
+					"name": "Shell array variable assignment",
+					"scope": "variable.other.assignment.array.shell",
+					"settings": {
+						"fontStyle": "bold",
+						"foreground": "#88ffdd"
+					}
+				},
+				{
+					"name": "Shell array literal",
+					"scope": "punctuation.definition.array-literal.shell",
+					"settings": {
+						"foreground": "#5fffd2"
+					}
+				},
+				{
+					// Like "storage.type.function.shell" in Vim; changed here
+					"name": "Shell function name",
+					"scope": "entity.name.function.shell",
+					"settings": {
+						"foreground": "#80dddd"
+					}
+				},
+				{
+					"name": "Shell assignment operators, assigned expression",
+					"scope": "keyword.operator.assignment.shell, keyword.operator.assignment.compound.shell, variable.other.assignment.rvalue.shell",
+					"settings": {
+						"foreground": "#ffffff"
+					}
+				},
+				{
+					"name": "Shell variable, positional parameters, special variables, command substitution, arithmetic expansion, parameter expansion, process substitution, subshell parens, herestring",
+					"scope": [
+						"variable.other.normal.shell",
+						"variable.parameter.positional.shell",
+						"variable.parameter.positional.number.shell", // $#
+						"variable.parameter.positional.all.shell", // $@, $*
+						"variable.language.special.shell", // $0, $?, $-, $$, $!, $_
+						"punctuation.definition.evaluation.parens.begin.shell",
+						"punctuation.definition.evaluation.parens.end.shell", // $(...) without ...
+						"punctuation.definition.evaluation.arithmetic.begin.shell",
+						"punctuation.definition.evaluation.arithmetic.end.shell", // $((...)) without ...
+						"punctuation.section.bracket.curly.variable.begin.shell",
+						"punctuation.section.bracket.curly.variable.end.shell", // ${...} without ...
+						"punctuation.section.array.shell", // [] in e. g. ${a[@]}
+						"string.interpolated.process-substitution.shell", // <(...) and >(...) without ...
+						"punctuation.definition.subshell.shell", // (...) without ...
+						"string.unquoted.herestring.shell" // Most probably a variable.
+					],
+					"settings": {
+						"fontStyle": "", // No italic for positional parameters
+						"foreground": "#5fd7ff"
+					}
+				},
+				{
+					"name": "Shell array variable",
+					"scope": "variable.other.array.shell",
+					"settings": {
+						"foreground": "#5fffd2",
+					}
+				},
+				{
+					"name": "Shell array subscript",
+					"scope": "punctuation.section.array.subscript.shell", // @ in e. g. ${a[@]}
+					"settings": {
+						"foreground": "#ffffff"
+					}
+				},
+				{
+					"name": "Shell conditional, loop",
+					"scope": "keyword.control.shell",
+					"settings": {
+						// "foreground": "#ffff00" // Too bright when bold (inherited from "keyword.control")
+						"foreground": "#e0e000"
+					}
+				},
+				{
+					"name": "Shell builtin function",
+					"scope": "support.function.builtin.shell",
+					"settings": {
+						// "foreground": "#ffff00" // Vim theme has a bit too much yellow ;)
+						"foreground": "#ffc400"
+					}
+				},
+				{
+					"name": "Shell command",
+					"scope": "entity.name.command.shell",
+					"settings": {
+						"foreground": "#ffffff",
+					}
+				},
+				{
+					"name": "Shell statement separators (&&, ||, ;, |, &), redirection operators, parameter expansion operators, case clause terminator, herestring operator",
+					"scope": [
+						"punctuation.separator.statement.and.shell", // && outside of [ ... ] and [[ ... ]]
+						"keyword.operator.pipe.shell", // | outside of ((...)) and $((...)) and thus also || outside of [ ... ] and [[ ... ]]
+						"punctuation.terminator.statement.semicolon.shell", // ;
+						"punctuation.separator.statement.background.shell", // & outside of ((...)) and $((...))
+						"keyword.operator.redirect.shell", // <, >, >> outside of ((...)) and $((...))
+						"keyword.operator.expansion.shell", // #, %, :, /, !, *, @, ... immediately in ${...}
+						"punctuation.terminator.case-clause.shell", // ;;
+						"keyword.operator.herestring.shell" // <<<
+					],
+					"settings": {
+						"foreground": "#ffff00"
+					}
+				},
+				{
+					"name": "Shell array subscript all",
+					"scope": "keyword.other.subscript.all.shell", // @ and * in e. g. ${a[...]}
+					"settings": {
+						"foreground": "#ffffff",
+					}
+				},
+				{
+					"name": "Single (non-subscript)/double square brackets, arithmetic string, command options",
+					"scope": [
+						"punctuation.definition.logical-expression.shell", // [ ... ] and [[ ... ]] without ...
+						"string.other.math.shell", // Contents of ((...)), $((...)) and e. g. a[...]
+						"constant.other.option.dash.shell",
+						"constant.other.option.shell"
+					],
+					"settings": {
+						"foreground": "#ffd7d7"
+					}
+				},
+				{
+					"name": "Invalid single (non-subscript)/double square brackets",
+					"scope": "punctuation.definition.logical-expression.invalid.shell",
+					"settings": {
+						"foreground": "#FF0000",
+						"fontStyle": "bold"
+					}
+				},
+			]
+		}
+	},
+	"workbench.startupEditor": "newUntitledFile",
+	"jshint.config": "/home/kalle/Node.js Projects/jshint.json",
+	"gotoNextPreviousMember.symbolKinds": [
+		"function",
+		"method"
+	],
+	"alignment.operatorPadding": "right",
+	"alignment.indentBase": "dontchange",
+	"alignment.surroundSpace": {
+		"comment": 1
+	},
+	"files.associations": {
+		"*.json": "jsonc"
+	},
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.copyOnSelection": true,
+	"terminal.integrated.enableBell": true,
+	"terminal.integrated.fontSize": 12,
+	"perl-toolbox.syntax.path": "/usr/bin",
+	"perl-toolbox.lint.path": "/usr/bin",
+	"perl-toolbox.lint.highlightMode": "word",
+	"perl-toolbox.lint.excludedPolicies": [
+		"BuiltinFunctions::ProhibitComplexMappings",
+		"BuiltinFunctions::RequireBlockGrep",
+		"BuiltinFunctions::RequireBlockMap",
+		"CodeLayout::ProhibitParensWithBuiltins",
+		"CodeLayout::RequireTidyCode",
+		"CodeLayout::RequireTrailingCommas",
+		"ControlStructures::ProhibitCascadingIfElse",
+		"ControlStructures::ProhibitDeepNests",
+		// "ControlStructures::ProhibitNegativeExpressionsInUnlessAndUntilConditions",
+		"ControlStructures::ProhibitPostfixControls",
+		"ControlStructures::ProhibitUnlessBlocks",
+		"InputOutput::RequireCheckedSyscalls",
+		"Modules::ProhibitMultiplePackages",
+		"Modules::RequireExplicitPackage",
+		"Modules::RequireVersionVar",
+		"NamingConventions::Capitalization",
+		"References::ProhibitDoubleSigils",
+		"RegularExpressions::ProhibitEnumeratedClasses",
+		"RegularExpressions::ProhibitEscapedMetacharacters",
+		"RegularExpressions::ProhibitFixedStringMatches",
+		"RegularExpressions::RequireDotMatchAnything",
+		"RegularExpressions::RequireExtendedFormatting",
+		"RegularExpressions::RequireLineBoundaryMatching",
+		"Subroutines::ProhibitSubroutinePrototypes",
+		"Subroutines::RequireArgUnpacking",
+		"Subroutines::RequireFinalReturn",
+		"TestingAndDebugging::ProhibitNoWarnings",
+		"ValuesAndExpressions::ProhibitEmptyQuotes",
+		"ValuesAndExpressions::ProhibitMagicNumbers",
+		"ValuesAndExpressions::ProhibitNoisyQuotes",
+		"ValuesAndExpressions::RequireNumberSeparators",
+		"Variables::ProhibitPunctuationVars",
+	],
+	"perl.maxSymbolResults": 1000,
+	"files.trimFinalNewlines": true,
+	"files.insertFinalNewline": true,
+	"workbench.list.horizontalScrolling": true,
+	"workbench.tree.indent": 16,
+	"workbench.editor.showTabs": true,
+	"search.smartCase": true,
+	"editor.parameterHints.cycle": true,
+	"editor.accessibilitySupport": "off",
+	"editor.largeFileOptimizations": false,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"eslint.alwaysShowStatus": true,
+	"gitlens.defaultDateStyle": "absolute",
+	"gitlens.defaultDateFormat": "MMM D, YYYY HH:mm",
+	"gitlens.liveshare.allowGuestAccess": false,
+	"gitlens.advanced.telemetry.enabled": false,
+	"git.allowForcePush": true,
+	"javascript.format.semicolons": "insert",
+	"javascript.preferences.quoteStyle": "single",
+	"gitlens.menus": {
+		"editor": {
+			"blame": false,
+			"clipboard": true,
+			"compare": true,
+			"details": true,
+			"history": false,
+			"remote": false
+		},
+		"editorGroup": {
+			"blame": true,
+			"compare": true
+		},
+		"editorTab": {
+			"clipboard": true,
+			"compare": true,
+			"history": true,
+			"remote": true
+		},
+		"explorer": {
+			"clipboard": true,
+			"compare": true,
+			"history": true,
+			"remote": true
+		},
+		"scmGroup": {
+			"compare": true,
+			"openClose": true,
+			"stash": true,
+			"stashInline": true
+		},
+		"scmItem": {
+			"clipboard": true,
+			"compare": true,
+			"history": true,
+			"remote": true,
+			"stash": true
+		}
+	},
+	"workspaceExplorer.workspaceStorageDirectory": "/home/kalle/vs-code-workspaces",
+	"gitlens.advanced.messages": {
+		"suppressCommitHasNoPreviousCommitWarning": true,
+		"suppressLineUncommittedWarning": true
+	},
+	"typescript.surveys.enabled": false,
+	"window.newWindowDimensions": "maximized",
+	"editor.suggestSelection": "first",
+	"workbench.activityBar.visible": true,
+	"solargraph.diagnostics": true,
+	"solargraph.formatting": true,
+	// Special content type-dependent editor settings:
+	"[ruby]": {
+		"editor.defaultFormatter": "castwide.solargraph"
+	},
+	"[git-commit]": {
+		"editor.rulers": [
+			50,
+			72
+		],
+		"editor.tabSize": 2,
+		"editor.insertSpaces": true
+	},
+	"[markdown]": {
+		"files.trimFinalNewlines": true,
+		"files.trimTrailingWhitespace": false,
+		"editor.tabSize": 2,
+		"editor.insertSpaces": true
+	},
+	//
+	"files.trimTrailingWhitespace": true,
+	"typescript.format.insertSpaceAfterTypeAssertion": true,
+	"typescript.format.semicolons": "insert",
+	"terminal.integrated.scrollback": 1000000,
+	"terminal.integrated.showExitAlert": false,
+	"editor.maxTokenizationLineLength": 100000, // Very nasty!
+	"auto-comment-next-line.list": [
+
+		{
+		   "char": "//",
+		   "languages": [
+			   "javascript",
+			   "jsonc"
+		   ]
+	   },
+	   {
+		   "char": "#",
+		   "languages": [
+			   "ruby",
+			   "gemfile",
+			   "perl",
+			   "shellscript"
+		   ]
+	   }
+	],
+	"auto-comment-blocks.hashStyleBlocks": [
+		"shellscript",
+		"gemfile"
+	],
+	"auto-comment-blocks.slashStyleBlocks": [
+		"jsonc"
+	],
+	"extensions.autoUpdate": false,
+	"npm.enableRunFromFolder": true,
+	"npm-intellisense.scanDevDependencies": true,
+	"npm-intellisense.showBuildInLibs": true,
+	"python.jediEnabled": false,
+	"gitlens.advanced.maxListItems": 0,
+	"gitlens.advanced.maxSearchItems": 0,
+	"workbench.editorAssociations": {
+		"*.md": "default"
+	},
+	"editor.renderControlCharacters": true,
+	"scm.inputFontFamily": "editor",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"debug.terminal.clearBeforeReusing": true,
+	"diffEditor.maxComputationTime": 0,
+	"gitlens.views.repositories.includeWorkingTree": true,
+	"gitlens.advanced.fileHistoryFollowsRenames": true,
+	"gitlens.currentLine.enabled": false,
+	"github.gitAuthentication": false,
+	"git.autofetchPeriod": 300,
+	"ruby.useBundler": true,
+	"solargraph.useBundler": true,
+	"cSpell.language": "en-GB,en-US",
+	"cSpell.enableFiletypes": [
+		"!asciidoc",
+		"!c",
+		"!cpp",
+		"!csharp",
+		"!css",
+		"!go",
+		"!graphql",
+		"!handlebars",
+		"!haskell",
+		"!html",
+		"!jade",
+		"!java",
+		"!javascript",
+		"!javascriptreact",
+		"!jupyter",
+		"!latex",
+		"!less",
+		"!markdown",
+		"!php",
+		"!plaintext",
+		"!pug",
+		"!python",
+		"!restructuredtext",
+		"!rust",
+		"!scala",
+		"!scss",
+		"!text",
+		"!typescript",
+		"!typescriptreact",
+		"!yaml",
+		"!yml",
+		"git-rebase"
+	],
+	"cSpell.userWords": [
+		"accu",
+		"agentkeepalive",
+		"atimes",
+		"Aufnahmen",
+		"backcolor",
+		"backref",
+		"backreference",
+		"backrefs",
+		"Besonderes",
+		"bigfish",
+		"cecho",
+		"Cmds",
+		"CSVs",
+		"curr",
+		"derkallevombau",
+		"dir's",
+		"dpkg",
+		"Exts",
+		"Filme",
+		"findmnt",
+		"forecolor",
+		"formattings",
+		"Funcs",
+		"gitlens",
+		"herestring",
+		"HISTFILE",
+		"Idcs",
+		"Inc'ed",
+		"initrd",
+		"ists",
+		"jetzt",
+		"JS's",
+		"kalle",
+		"kalle's",
+		"Kodi's",
+		"libc",
+		"lintcfg",
+		"lookaround",
+		"Lookarounds",
+		"lvalue",
+		"MACGYVER",
+		"Marz",
+		"mehr",
+		"metacharacters",
+		"mkdir",
+		"msixpodualn",
+		"mtimes",
+		"nojekyll",
+		"oneliner",
+		"Paren",
+		"Parens",
+		"parseable",
+		"Raumschiff",
+		"rvalue",
+		"sdcard",
+		"Serien",
+		"shortstat",
+		"SIGINT",
+		"SIGTERM",
+		"soname",
+		"subdir",
+		"subdirs",
+		"Substr",
+		"Suff",
+		"svgs",
+		"sysfiles",
+		"syslogs",
+		"textmate",
+		"timezone's",
+		"tsdoc",
+		"typedoc",
+		"watchtimes"
+	],
+	"bashIde.globPattern": "**/*@(.sh|)",
+	"cSpell.experimental.enableRegexpView": true,
+	"workbench.editor.untitled.hint": "hidden",
+	"xmlTools.splitXmlnsOnFormat": false,
+	"xmlTools.persistXPathQuery": false,
+	"bookmarks.saveBookmarksInProject": true,
+	"bookmarks.sideBar.expanded": true,
+	"bookmarks.navigateThroughAllFiles": false,
+	"bookmarks.label.suggestion": "suggestWhenSelectedOrLineWhenNoSelected",
+	"terminal.integrated.showTabs": false,
+	"terminal.integrated.profiles.linux": {
+		"bash": {
+			"path": "bash"
+		}
+	},
+	// Sadly, this cannot be set in workspace settings anymore,
+	// but this solution has the benefit that there is no need anymore
+	// to set it for each newly created workspace.
+	// The path will be checked in .bashrc and if the file doesn't exist,
+	// it will be created. So this solution is actually much better.
+	"terminal.integrated.env.linux": {
+
+		"VSCodeProposedHISTFILE": "/home/kalle/vs-code-workspaces/.bash_history-${workspaceFolderBasename}"
+	},
+	"gitlens.views.formats.commits.description": "${author}, authored ${authorAgoOrDate}, committed ${committerAgoOrDate}",
+	"gitlens.statusBar.format": "${author}, authored ${authorAgoOrDate}, committed ${committerAgoOrDate}",
+	"security.workspace.trust.enabled": false,
+	"editor.bracketPairColorization.enabled": false,
+	"gitlens.advanced.abbreviateShaOnCopy": true,
+	"telemetry.telemetryLevel": "off",
+	"telemetry.enableCrashReporter": false,
+	"telemetry.enableTelemetry": false,
+	"C_Cpp.default.browse.limitSymbolsToIncludedHeaders": false,
+	"git.enableStatusBarSync": false,
+	"C_Cpp.autocompleteAddParentheses": true,
+	"C_Cpp.clang_format_path": "/usr/bin/clang-format",
+	"C_Cpp.formatting": "clangFormat",
+	"terminal.integrated.cwd": "${workspaceFolderBasename}",
+	"terminal.integrated.drawBoldTextInBrightColors": false,
+	"terminal.integrated.environmentChangesIndicator": "on",
+	"terminal.integrated.gpuAcceleration": "on",
+	"terminal.integrated.persistentSessionScrollback": 1000000,
+	"terminal.integrated.rightClickBehavior": "copyPaste",
+	"terminal.integrated.tabs.enabled": false
+}
