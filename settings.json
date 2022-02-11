@@ -528,8 +528,9 @@
 	},
 	"workspaceExplorer.workspaceStorageDirectory": "/home/kalle/vs-code-workspaces",
 	"gitlens.advanced.messages": {
-		"suppressCommitHasNoPreviousCommitWarning": true,
-		"suppressLineUncommittedWarning": true
+		"suppressCommitHasNoPreviousCommitWarning": false,
+		"suppressCreatePullRequestPrompt": false,
+		"suppressLineUncommittedWarning": false
 	},
 	"typescript.surveys.enabled": false,
 	"window.newWindowDimensions": "maximized",
