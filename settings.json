@@ -597,7 +597,8 @@
 	"gitlens.advanced.maxListItems": 0,
 	"gitlens.advanced.maxSearchItems": 0,
 	"workbench.editorAssociations": {
-		"*.md": "default"
+		"*.md": "default",
+		"git-rebase-todo": "gitlens.rebase"
 	},
 	"editor.renderControlCharacters": true,
 	"scm.inputFontFamily": "editor",
