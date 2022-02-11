@@ -17,7 +17,6 @@
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 	"templateGenerator.fields.author": "derkallevombau",
 	"editor.insertSpaces": false,
-	"editor.detectIndentation": false,
 	"javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
 	"javascript.format.placeOpenBraceOnNewLineForFunctions": true,
 	"typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
