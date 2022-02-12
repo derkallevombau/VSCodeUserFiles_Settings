@@ -751,7 +751,6 @@
 	"gitlens.views.formats.commits.description": "${author}, authored ${authorAgoOrDate}, committed ${committerAgoOrDate}",
 	"gitlens.statusBar.format": "${author}, authored ${authorAgoOrDate}, committed ${committerAgoOrDate}",
 	"security.workspace.trust.enabled": false,
-	"editor.bracketPairColorization.enabled": false,
 	"gitlens.advanced.abbreviateShaOnCopy": true,
 	"telemetry.telemetryLevel": "off",
 	"telemetry.enableCrashReporter": false,
@@ -767,5 +766,6 @@
 	"terminal.integrated.gpuAcceleration": "on",
 	"terminal.integrated.persistentSessionScrollback": 1000000,
 	"terminal.integrated.rightClickBehavior": "copyPaste",
+	"editor.bracketPairColorization.enabled": true,
 	"terminal.integrated.tabs.enabled": false
 }
