@@ -766,6 +766,7 @@
 	"terminal.integrated.gpuAcceleration": "on",
 	"terminal.integrated.persistentSessionScrollback": 1000000,
 	"terminal.integrated.rightClickBehavior": "copyPaste",
+	"terminal.integrated.tabs.enabled": false,
 	"editor.guides.bracketPairs": true,
 	"editor.guides.bracketPairsHorizontal": true,
 	"editor.bracketPairColorization.enabled": true,
