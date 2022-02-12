@@ -766,6 +766,8 @@
 	"terminal.integrated.gpuAcceleration": "on",
 	"terminal.integrated.persistentSessionScrollback": 1000000,
 	"terminal.integrated.rightClickBehavior": "copyPaste",
+	"editor.guides.bracketPairs": true,
+	"editor.guides.bracketPairsHorizontal": true,
 	"editor.bracketPairColorization.enabled": true,
 	"cSpell.allowCompoundWords": true,
 }
