@@ -771,4 +771,5 @@
 	"editor.bracketPairColorization.enabled": true,
 	"cSpell.allowCompoundWords": true,
 	"timeline.excludeSources": [],
+	"workbench.editor.pinnedTabSizing": "shrink",
 }
