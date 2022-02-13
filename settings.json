@@ -760,7 +760,6 @@
 	"C_Cpp.autocompleteAddParentheses": true,
 	"C_Cpp.clang_format_path": "/usr/bin/clang-format",
 	"C_Cpp.formatting": "clangFormat",
-	"terminal.integrated.cwd": "${workspaceFolderBasename}",
 	"terminal.integrated.drawBoldTextInBrightColors": false,
 	"terminal.integrated.environmentChangesIndicator": "on",
 	"terminal.integrated.gpuAcceleration": "on",
