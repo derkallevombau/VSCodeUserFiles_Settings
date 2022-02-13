@@ -770,4 +770,5 @@
 	"editor.guides.bracketPairsHorizontal": true,
 	"editor.bracketPairColorization.enabled": true,
 	"cSpell.allowCompoundWords": true,
+	"timeline.excludeSources": [],
 }
