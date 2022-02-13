@@ -745,7 +745,6 @@
 	// The path will be checked in .bashrc and if the file doesn't exist,
 	// it will be created. So this solution is actually much better.
 	"terminal.integrated.env.linux": {
-
 		"VSCodeProposedHISTFILE": "/home/kalle/vs-code-workspaces/.bash_history-${workspaceFolderBasename}"
 	},
 	"gitlens.views.formats.commits.description": "${author}, authored ${authorAgoOrDate}, committed ${committerAgoOrDate}",
@@ -753,8 +752,6 @@
 	"security.workspace.trust.enabled": false,
 	"gitlens.advanced.abbreviateShaOnCopy": true,
 	"telemetry.telemetryLevel": "off",
-	"telemetry.enableCrashReporter": false,
-	"telemetry.enableTelemetry": false,
 	"C_Cpp.default.browse.limitSymbolsToIncludedHeaders": false,
 	"git.enableStatusBarSync": false,
 	"C_Cpp.autocompleteAddParentheses": true,
