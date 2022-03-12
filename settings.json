@@ -7,7 +7,6 @@
 	"editor.formatOnType": true,
 	"editor.fontSize": 12,
 	"editor.fontFamily": "'monospace', 'Droid Sans Mono', monospace, 'Droid Sans Fallback'",
-	"window.menuBarVisibility": "toggle",
 	"window.restoreFullscreen": true,
 	"window.restoreWindows": "all",
 	"files.autoSave": "afterDelay",
@@ -771,6 +770,7 @@
 	"cSpell.allowCompoundWords": true,
 	"timeline.excludeSources": [],
 	"workbench.editor.pinnedTabSizing": "shrink",
+	"window.titleBarStyle": "custom",
 	"terminal.integrated.commandsToSkipShell":[
 		"workbench.action.toggleSidebarVisibility",
 		"openInTerminal",
