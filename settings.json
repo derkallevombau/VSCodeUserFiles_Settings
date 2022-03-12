@@ -772,4 +772,6 @@
 	"cSpell.allowCompoundWords": true,
 	"timeline.excludeSources": [],
 	"workbench.editor.pinnedTabSizing": "shrink",
+	"git.repositoryScanMaxDepth": 0,
+	"gitlens.advanced.repositorySearchDepth": 0,
 }
