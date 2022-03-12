@@ -772,6 +772,10 @@
 	"cSpell.allowCompoundWords": true,
 	"timeline.excludeSources": [],
 	"workbench.editor.pinnedTabSizing": "shrink",
+	"terminal.integrated.commandsToSkipShell":[
+		"workbench.action.toggleSidebarVisibility",
+		"openInTerminal",
+	],
 	"git.repositoryScanMaxDepth": 0,
 	"gitlens.advanced.repositorySearchDepth": 0,
 }
