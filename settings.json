@@ -473,7 +473,6 @@
 	"files.insertFinalNewline": true,
 	"workbench.list.horizontalScrolling": true,
 	"workbench.tree.indent": 16,
-	"workbench.editor.showTabs": true,
 	"search.smartCase": true,
 	"editor.parameterHints.cycle": true,
 	"editor.accessibilitySupport": "off",
@@ -535,7 +534,6 @@
 	"typescript.surveys.enabled": false,
 	"window.newWindowDimensions": "maximized",
 	"editor.suggestSelection": "first",
-	"workbench.activityBar.visible": true,
 	"solargraph.diagnostics": true,
 	"solargraph.formatting": true,
 	// Special content type-dependent editor settings:
