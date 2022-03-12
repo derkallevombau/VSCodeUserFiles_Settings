@@ -768,6 +768,7 @@
 	"editor.linkedEditing": true,
 	"editor.guides.bracketPairs": true,
 	"editor.guides.bracketPairsHorizontal": true,
+	"editor.guides.highlightActiveBracketPair": true,
 	"editor.bracketPairColorization.enabled": true,
 	"cSpell.allowCompoundWords": true,
 	"timeline.excludeSources": [],
