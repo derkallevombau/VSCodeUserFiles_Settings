@@ -487,12 +487,12 @@
 	"javascript.preferences.quoteStyle": "single",
 	"gitlens.menus": {
 		"editor": {
-			"blame": false,
+			"blame": true,
 			"clipboard": true,
 			"compare": true,
 			"details": true,
-			"history": false,
-			"remote": false
+			"history": true,
+			"remote": true
 		},
 		"editorGroup": {
 			"blame": true,
@@ -509,6 +509,12 @@
 			"compare": true,
 			"history": true,
 			"remote": true
+		},
+		"scm": {
+			"authors": true
+		},
+		"scmGroupInline": {
+			"stash": true
 		},
 		"scmGroup": {
 			"compare": true,
