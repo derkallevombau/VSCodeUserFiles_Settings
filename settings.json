@@ -640,6 +640,7 @@
 		"!text",
 		"!typescript",
 		"!typescriptreact",
+		"!vue",
 		"!yaml",
 		"!yml",
 		"git-rebase"
